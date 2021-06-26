@@ -1,0 +1,190 @@
+.contact_section_start {
+  padding-top: 100px;
+  background-color: #fff;
+}
+.contact_section_start > * {
+  max-width: 1200px;
+}
+.contact_section_start > * .content_wraper {
+  display: flex;
+  gap: 25px;
+}
+@media all and (max-width: 850px) {
+  .contact_section_start > * .content_wraper {
+    flex-direction: column;
+  }
+}
+.contact_section_start > * .content_wraper .left {
+  flex: 1;
+  border-right: 1px solid #0001;
+}
+@media all and (max-width: 850px) {
+  .contact_section_start > * .content_wraper .left {
+    border-right: none;
+    order: 2;
+  }
+}
+.contact_section_start > * .content_wraper .left .contact_info {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #444;
+}
+.contact_section_start > * .content_wraper .left .contact_info a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.contact_section_start > * .content_wraper .left .contact_info a .icon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  background-color: var(--primary_color);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px #0002;
+}
+.contact_section_start > * .content_wraper .left .contact_info a p {
+  margin: 0;
+}
+.contact_section_start > * .content_wraper .right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact_section_start > * .content_wraper .right img {
+  width: 100%;
+  height: auto;
+}
+.contact_section_start > * .contact_form {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 25px #0001, 0 1px 15px #0001, 0 1px 5px #0001;
+  backdrop-filter: blur(15px);
+  transform: translateY(50px);
+  position: relative;
+  z-index: 1;
+}
+.contact_section_start > * .contact_form .form_flex {
+  display: flex;
+  gap: 25px;
+}
+@media all and (max-width: 500px) {
+  .contact_section_start > * .contact_form .form_flex {
+    gap: 0;
+    flex-direction: column;
+  }
+}
+.contact_section_start > * .contact_form .form_flex > * {
+  flex: 1;
+}
+.contact_section_start > * .contact_form .form_input_wraper {
+  position: relative;
+  margin-bottom: 35px;
+}
+.contact_section_start > * .contact_form .form_input_wraper label {
+  position: absolute;
+  left: 0;
+  padding-right: 5px;
+  bottom: 20%;
+  color: #ccc;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+  display: none;
+}
+
+.contact_section_start > * .contact_form .form_input_wraper .validation_message{
+  position: absolute;
+  top: 110%;
+  left: 0%;
+  background-color: var(--danger);
+  color: #fff;
+  padding: 0px 10px;
+  font-size: 12px;
+}
+.contact_section_start > * .contact_form .form_input_wraper .validation_message::before{
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: inherit;
+  position: absolute;
+  top: 0%;
+  right: 50%; 
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+::placeholder{
+  color: #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+}
+.contact_section_start
+  > *
+  .contact_form
+  .form_input_wraper
+  :is(textarea, input) {
+  background: transparent;
+  display: block;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.contact_section_start
+  > *
+  .contact_form
+  .form_input_wraper
+  :is(input, textarea) {
+  background: transparent;
+  display: block;
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  width: 100%;
+  font-family: inherit;
+  border-bottom: 1px solid #0002;
+  transition: 0.3s ease-in-out;
+}
+.contact_section_start
+  > *
+  .contact_form
+  .form_input_wraper
+  :is(textarea:is(:valid, :focus), input:is(:valid, :focus)) {
+  border-bottom: 1px solid var(--primary_color);
+}
+.contact_section_start
+  > *
+  .contact_form
+  .form_input_wraper
+  :is(textarea:is(:valid, :focus), input:is(:valid, :focus))
+  + label {
+  color: var(--primary_color);
+  bottom: 100%;
+  transform: translateY(50%);
+}
+.contact_section_start > * .contact_form .submit_button {
+  font-size: 1rem;
+  border-radius: 30px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+}
+
+.map_section {
+  height: 50vh;
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+}
+.map_section iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=contact_us.css.map */

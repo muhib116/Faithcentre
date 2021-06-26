@@ -1,0 +1,99 @@
+/* our mission section start */
+.our_mission_section {
+  margin: 50px 0;
+  padding: 35px 0;
+  background-color: #f8fcff;
+}
+.our_mission_section ul li{
+  padding-left: 15px;
+}
+.our_mission_section ul li::before{
+  content: "\f122";
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--danger_color);
+}
+.our_mission_section > * {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  text-align: justify;
+}
+@media all and (max-width: 1100px) {
+  .our_mission_section > * {
+    flex-direction: column;
+  }
+}
+.our_mission_section .section_title::before,
+.our_mission_section .section_title::after {
+  background-color: var(--danger_color);
+}
+.our_mission_section .left,
+.our_mission_section .right {
+  max-width: 700px;
+  flex: 1;
+}
+@media all and (max-width: 1100px) {
+  .our_mission_section .left,
+  .our_mission_section .right {
+    max-width: 100%;
+  }
+}
+.our_mission_section .left {
+  padding: 0 15px;
+  font-size: 17px;
+  color: #333;
+}
+@media all and (max-width: 1100px) {
+  .our_mission_section .left {
+    padding: 0;
+    order: 2;
+  }
+}
+.our_mission_section .left > p {
+  text-align: justify;
+}
+.our_mission_section .left ul {
+  padding: 0;
+  padding-left: 15px;
+}
+.our_mission_section .left ul li {
+  margin-bottom: 5px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.our_mission_section .left ul li .icon {
+  color: var(--danger);
+}
+.our_mission_section .left .mission_read_more {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 35px;
+  border-radius: 50px;
+  padding: 10px 25px;
+}
+.our_mission_section .right {
+  overflow: hidden;
+}
+@media all and (max-width: 1100px) {
+  .our_mission_section .right {
+    order: 1;
+    max-height: 60vh;
+  }
+}
+
+/* our mission section end */

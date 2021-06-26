@@ -1,0 +1,103 @@
+/* why choose us section start */
+.why_choose_us_section {
+  margin: 50px 0;
+  padding: 35px 0;
+}
+
+.why_choose_us_section ul li{
+  padding-left: 15px;
+}
+
+.why_choose_us_section ul li::before{
+  content: "\f122";
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary_color);
+}
+
+.why_choose_us_section > * {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  text-align: justify;
+}
+@media all and (max-width: 1100px) {
+  .why_choose_us_section > * {
+    flex-direction: column;
+  }
+}
+.why_choose_us_section .left,
+.why_choose_us_section .right {
+  max-width: 700px;
+  flex: 1;
+}
+@media all and (max-width: 1100px) {
+  .why_choose_us_section .left,
+  .why_choose_us_section .right {
+    max-width: 100%;
+  }
+}
+.why_choose_us_section .left {
+  padding: 0 15px;
+  font-size: 17px;
+  color: #333;
+  order: 2;
+}
+@media all and (max-width: 1100px) {
+  .why_choose_us_section .left {
+    padding: 0;
+  }
+}
+.why_choose_us_section .left > p {
+  text-align: justify;
+}
+.why_choose_us_section .left ul {
+  padding: 0;
+  padding-left: 15px;
+}
+.why_choose_us_section .left ul li {
+  margin-bottom: 5px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.why_choose_us_section .left ul li .icon {
+  color: var(--primary_color);
+}
+.why_choose_us_section .left .why_choose_us_read_more {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 0px;
+  border-radius: 50px;
+  padding: 10px 25px;
+}
+.why_choose_us_section .right {
+  overflow: hidden;
+  order: 1;
+}
+@media all and (max-width: 1100px) {
+  .why_choose_us_section .right {
+    height: 300px;
+  }
+}
+.why_choose_us_section .right .img_caption {
+  background-color: #29b6f622;
+  border-left: 4px solid #29b6f6;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+/* why choose us section end */

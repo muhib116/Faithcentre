@@ -1,0 +1,55 @@
+{
+  "short_name": "Faithcentre",
+  "name": "Faithcentre",
+  "categories": ["Education"],
+  "lang": "en-US",
+  "description": "Online Education Platform",
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#fff",
+  "theme_color": "#29b6f6",
+  "display": "standalone",
+  "orientation": "portrait",
+  "manifest_version": 0.1,
+  "author": "Muhibbullah Ansary",
+  "canonical": "http://www.faithcentre.org.uk",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+
+  "type": "privileged",
+  
+  /*"permissions": {
+    "audio-capture" : {
+      "description" : "Audio capture"
+    },
+    "speech-recognition" : {
+      "description" : "Speech recognition"
+    },
+    "notifications" : {
+      "description" : "Notifications"
+    }
+  }*/
+
+  
+  /*"related_applications": [{
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+  }],*/
+  
+  // "gcm_sender_id": "205270362265"
+}

@@ -1,0 +1,75 @@
+/* banner bottom section start */
+.banner_bottom > * {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  transform: translateY(-50px);
+  perspective: 400px;
+}
+@media all and (max-width: 1000px) {
+  .banner_bottom > * {
+    flex-direction: column;
+  }
+}
+.banner_bottom > * .content {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid var(--primary_color);
+  padding: 25px 50px;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.banner_bottom > * .content::before,
+.banner_bottom > * .content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary_color);
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
+.banner_bottom > * .content::after {
+  top: unset;
+  left: unset;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary_color);
+}
+.banner_bottom > * .content .icon {
+  background: var(--primary_color);
+  color: #fff;
+  text-shadow: 1px 1px 5px #0003;
+  min-width: 60px;
+  min-height: 60px;
+  display: grid;
+  place-content: center;
+  font-size: 30px;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+.banner_bottom > * .content .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* banner bottom section end */

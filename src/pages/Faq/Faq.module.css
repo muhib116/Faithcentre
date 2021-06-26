@@ -1,0 +1,10 @@
+.faq_section_start {
+  margin: 100px 0;
+}
+
+
+@media all and (max-width: 768px){
+  .faq_section_start {
+    margin: 30px 0;
+  }
+}
